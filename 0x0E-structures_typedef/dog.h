@@ -2,9 +2,10 @@
 #define FILE_DOG
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * struct dog - structure dog
+ * @name: atribute pointer to char name's dog
+ * @age: atribute float age's dog
+ * @owner: atribute pointer to char owner's dog
  */
 
 struct dog
