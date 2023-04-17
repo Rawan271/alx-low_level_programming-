@@ -1,18 +1,27 @@
-#include <stdio.h>
-#include "dog.h"
+#ifndef FILE_DOG
+#define FILE_DOG
 
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-int main(void)
-{
-    struct dog my_dog;
 
- charr.name = "Poppy";
-    float.age = 3.5;
-    char.owner = "Bob";
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-    return (0);
-}
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
+void print_dog(struct dog *d);
+
+dog_t *new_dog(char *name, float age, char *owner);
+
+void free_dog(dog_t *d);
+
+#endif
